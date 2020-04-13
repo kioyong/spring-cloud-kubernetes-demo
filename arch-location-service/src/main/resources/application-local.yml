@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    kubernetes:
+      enabled: false
+      discovery:
+        enabled: false
+      ribbon:
+        enabled: false
+ribbon:
+  eureka:
+    enabled: false
+
+eureka:
+  client:
+    enabled: false
