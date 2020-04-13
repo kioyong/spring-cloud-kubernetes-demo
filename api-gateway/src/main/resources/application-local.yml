@@ -4,11 +4,9 @@ spring:
       enabled: false
       discovery:
         enabled: false
-      ribbon:
-        enabled: false
     loadbalancer:
       ribbon:
-        enabled: false
+        enabled: true
 ribbon:
   eureka:
     enabled: false
@@ -16,3 +14,7 @@ ribbon:
 eureka:
   client:
     enabled: false
+
+arch-location-service:
+  ribbon:
+    listOfServers: http://localhost:8081,http://localhost:8082

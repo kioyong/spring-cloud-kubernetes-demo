@@ -1,18 +1,15 @@
 spring:
   cloud:
     kubernetes:
-      enabled: false
+      enabled: true
       discovery:
-        enabled: false
-      ribbon:
-        enabled: false
+        enabled: true
     loadbalancer:
       ribbon:
         enabled: false
-ribbon:
-  eureka:
-    enabled: false
-
 eureka:
   client:
+    enabled: false
+ribbon:
+  eureka:
     enabled: false

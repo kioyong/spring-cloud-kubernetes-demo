@@ -1,11 +1,12 @@
 server:
-  port: 8081
+  port: 8083
 
-spring:
-  application:
-    name: arch-location-service
 management:
   endpoints:
     web:
       exposure:
         include: '*'
+
+spring:
+  application:
+    name: api-gateway
